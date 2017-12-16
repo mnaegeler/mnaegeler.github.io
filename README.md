@@ -1,2 +1,2 @@
-# mnaegeler.github.io
-Github Pages blog and website
+# mnaegeler-space
+My personal website
