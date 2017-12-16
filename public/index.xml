@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Marcelo Andre Naegeler - Full-stack developer</title>
+    <link>https://mnaegeler.space/</link>
+    <description>Recent content on Marcelo Andre Naegeler - Full-stack developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 15 Dec 2017 09:25:55 -0200</lastBuildDate>
+    
+	<atom:link href="https://mnaegeler.space/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About me</title>
+      <link>https://mnaegeler.space/about/</link>
+      <pubDate>Fri, 15 Dec 2017 09:25:55 -0200</pubDate>
+      
+      <guid>https://mnaegeler.space/about/</guid>
+      <description>I am a web developer since 2012, starting with front-end development. In the very beginning focused on learn the pure JavaScript.
+Now I work with Node.js, PHP, SQL and NoSQL databases and at the moment, I&amp;rsquo;m learning DartLang.
+I love to learn new languages and get to express myself in better ways. I speak English, Spanish and Portuguese and right now I&amp;rsquo;m learning German and French.
+My current studies in programming languages and frameworks involves the Flutter Framework, Ionic, Firebase, UX and UI design (I&amp;rsquo;m improving my skills) and (even more) JavaScript.</description>
+    </item>
+    
+    <item>
+      <title>Contact me</title>
+      <link>https://mnaegeler.space/contact/</link>
+      <pubDate>Fri, 15 Dec 2017 09:25:51 -0200</pubDate>
+      
+      <guid>https://mnaegeler.space/contact/</guid>
+      <description> Let&amp;rsquo;s have a conversation! Phone: +55 (47) 98855 6581 (Telegram is preffered, but I have WhatsApp too)
+Or on the social media: </description>
+    </item>
+    
+    <item>
+      <title>Flutter: criando sua primeira tela</title>
+      <link>https://mnaegeler.space/blog/flutter-criando-sua-primeira-tela/</link>
+      <pubDate>Thu, 14 Dec 2017 23:17:00 -0200</pubDate>
+      
+      <guid>https://mnaegeler.space/blog/flutter-criando-sua-primeira-tela/</guid>
+      <description>Flutter para desenvolvedores web
+ Starting up Removido todo o conteúdo do arquivo, insira o conteúdo abaixo:
+ Você pode rodar o projeto no emulador Android ou iOS (Control + r).
+O primeiro import do código, irá importar os Widgets já com estilos Material Design, mais para a frente aprenderemos a modificar os estilos para terem a cara do iOS.
+Perceba que no Flutter tudo é widget, ou seja, tudo com o que você trabalhará serão componentes.</description>
+    </item>
+    
+    <item>
+      <title>Flutter: uma introdução ao Flutter framework</title>
+      <link>https://mnaegeler.space/blog/flutter-uma-introdu%C3%A7%C3%A3o-ao-flutter-framework/</link>
+      <pubDate>Tue, 12 Dec 2017 08:51:13 -0200</pubDate>
+      
+      <guid>https://mnaegeler.space/blog/flutter-uma-introdu%C3%A7%C3%A3o-ao-flutter-framework/</guid>
+      <description>Flutter para desenvolvedores web
+ O Flutter é um framework desenvolvido pela Google e a linguagem usada para desenvolver é o Dart.
+O objetivo desse texto é descobrir a linguagem Dart e o framework, já que vindo do ambiente web fiquei um tanto perdido.
+Meu primeiro contato com o Flutter (e com Dart) foi quando estava buscando alternativas para aplicativos mobile, que atualmente uso Ionic. Nessa busca por novas linguagens e ferramentas encontrei React Native, NativeScript e Quasar.</description>
+    </item>
+    
+  </channel>
+</rss>

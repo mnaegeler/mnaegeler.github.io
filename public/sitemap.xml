@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://mnaegeler.space/about/</loc>
+    <lastmod>2017-12-15T09:25:55-02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mnaegeler.space/contact/</loc>
+    <lastmod>2017-12-15T09:25:51-02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mnaegeler.space/blog/flutter-criando-sua-primeira-tela/</loc>
+    <lastmod>2017-12-14T23:17:00-02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mnaegeler.space/blog/flutter-uma-introdu%C3%A7%C3%A3o-ao-flutter-framework/</loc>
+    <lastmod>2017-12-12T08:51:13-02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mnaegeler.space/blog/</loc>
+    <lastmod>2017-12-14T23:17:00-02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mnaegeler.space/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mnaegeler.space/</loc>
+    <lastmod>2017-12-15T09:25:55-02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mnaegeler.space/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

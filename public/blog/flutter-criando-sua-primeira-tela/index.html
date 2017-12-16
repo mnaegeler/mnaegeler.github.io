@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Marcelo Andre Naegeler">
+<meta name="description" content="Flutter para desenvolvedores web
+ Starting up Removido todo o conteúdo do arquivo, insira o conteúdo abaixo:
+ Você pode rodar o projeto no emulador Android ou iOS (Control &#43; r).
+O primeiro import do código, irá importar os Widgets já com estilos Material Design, mais para a frente aprenderemos a modificar os estilos para terem a cara do iOS.
+Perceba que no Flutter tudo é widget, ou seja, tudo com o que você trabalhará serão componentes.">
+
+<meta property="og:title" content="Flutter: criando sua primeira tela" />
+<meta property="og:description" content="Flutter para desenvolvedores web
+ Starting up Removido todo o conteúdo do arquivo, insira o conteúdo abaixo:
+ Você pode rodar o projeto no emulador Android ou iOS (Control &#43; r).
+O primeiro import do código, irá importar os Widgets já com estilos Material Design, mais para a frente aprenderemos a modificar os estilos para terem a cara do iOS.
+Perceba que no Flutter tudo é widget, ou seja, tudo com o que você trabalhará serão componentes." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mnaegeler.space/blog/flutter-criando-sua-primeira-tela/" />
+
+
+
+<meta property="article:published_time" content="2017-12-14T23:17:00-02:00"/>
+
+<meta property="article:modified_time" content="2017-12-14T23:17:00-02:00"/>
+
+
+
+
+
+
+
+
+
+
+
+
+<title>
+
+
+     Flutter: criando sua primeira tela 
+
+</title>
+<link rel="canonical" href="https://mnaegeler.space/blog/flutter-criando-sua-primeira-tela/">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="https://mnaegeler.space/css/reset.css?t=2017-12-16%2008%3a39%3a36.273891%20-0200%20-02%20m%3d%2b0.310864041">
+    <link rel="stylesheet" href="https://mnaegeler.space/css/pygments.css?t=2017-12-16%2008%3a39%3a36.273891%20-0200%20-02%20m%3d%2b0.310864041">
+    <link rel="stylesheet" href="https://mnaegeler.space/css/main.css?t=2017-12-16%2008%3a39%3a36.273891%20-0200%20-02%20m%3d%2b0.310864041">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://mnaegeler.space/favicon/favicon.ico"
+
+>
+
+
+
+
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+                
+                
+                
+                
+                
+                    
+                
+                    
+                
+                
+                <a href="https://mnaegeler.space/"><img class="avatar" src="https://mnaegeler.space/img/profile.jpg" srcset="https://mnaegeler.space/img/profile.jpg 1x"></a>
+            
+            <a href="https://mnaegeler.space/"><div class="name">Marcelo Andre Naegeler</div></a>
+            
+            <nav>
+                <ul>
+                    
+                        <li class="nav-blog"><a href="https://mnaegeler.space/blog/"><span>Blog</span></a></li>
+                    
+                        <li class="nav-about"><a href="https://mnaegeler.space/about/"><span>About</span></a></li>
+                    
+                        <li class="nav-contact"><a href="https://mnaegeler.space/contact/"><span>Contact</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+
+        
+            <a href="//github.com/mnaegeler" target="_blank" rel="noopener"><img class="icon" src="https://mnaegeler.space/img/github.svg" alt="github" /></a>
+        
+
+        
+            <a href="//twitter.com/marcelonaegeler" target="_blank" rel="noopener"><img class="icon" src="https://mnaegeler.space/img/twitter.svg" alt="twitter" /></a>
+        
+
+        
+
+        
+
+        
+            <a href="//linkedin.com/in/marcelonaegeler" target="_blank" rel="noopener"><img class="icon" src="https://mnaegeler.space/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+            <a href="//instagram.com/manaegeler" target="_blank" rel="noopener"><img class="icon" src="https://mnaegeler.space/img/instagram.svg" alt="instagram" /></a>
+        
+            
+        
+
+        
+
+        
+            <a href="mailto:marcelo.andre.naegeler@gmail.com"><img class="icon" src="https://mnaegeler.space/img/email.svg" alt="email" /></a>
+        
+
+        
+            <a href="https://mnaegeler.space/index.xml"><img class="icon" src="https://mnaegeler.space/img/rss.svg" alt="rss" /></a>
+        
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    Flutter: criando sua primeira tela
+
+</div>
+
+                    <div class="initials"><a href="https://mnaegeler.space/">ad</a></div>
+                </div>
+                <div class="meta">
+                    
+                    <div class="date" title='Thu Dec 14 2017 23:17:00 -02'>Dec 14, 2017</div>
+                    
+                    
+		    <div class="reading-time"><div class="middot"></div>2 minutes read</div>
+                    
+                </div>
+            </div>
+            <div class="markdown">
+                
+
+<blockquote>
+<p>Flutter para desenvolvedores web</p>
+</blockquote>
+
+<h2 id="starting-up">Starting up</h2>
+
+<p>Removido todo o conteúdo do arquivo, insira o conteúdo abaixo:</p>
+
+<script src="https://gist.github.com/mnaegeler/acff78c01d5d436cdd5fa93a4fe6d1ce.js"></script>
+
+<p>Você pode rodar o projeto no emulador Android ou iOS (Control + r).</p>
+
+<p>O primeiro <code>import</code> do código, irá importar os Widgets já com estilos Material Design, mais para a frente aprenderemos a modificar os estilos para terem a cara do iOS.</p>
+
+<p>Perceba que no Flutter <strong>tudo é widget</strong>, ou seja, tudo com o que você  trabalhará serão componentes.</p>
+
+<p>Logo abaixo temos a função <code>main</code>, que é onde inicia nossa aplicação, juntamente com a chamada <code>runApp</code>. São padrões para todas as aplicações.</p>
+
+<p><code>MaterialApp</code> é um Widget também padrão do Flutter que cria a aplicação e também é onde irão as configurações de rotas, páginas, etc. Ali temos declaradas as propriedades <code>title</code> e <code>home</code>.</p>
+
+<p>A propriedade <code>home</code> é usada como uma rota inicial (<code>/</code>), caso não haja setada em <code>routes</code> (as rotas são declaradas como na web, separadas por <code>/</code>). Já a propriedade <code>title</code> é somente um título para descrever a aplicação.</p>
+
+<p>Dentro de <code>home</code>, assim como nas outras rotas, você poderá começar a construir sua tela. No exemplo temos a chamada do <code>Scaffold</code>, que é literalmente o esqueleto, a armação da tela, cada rota poderá ter o seu Scaffold. Dentro do Scaffold é possível colocar os itens fixos da tela, como navegações e botões flutuantes. Ali dentro temos uma <code>AppBar</code> que formará a barra superior do aplicativo com o título.</p>
+
+<p>No Scaffold ainda é possível acrescentar outros itens como no exemplo abaixo (<strong>divirta-se!</strong>):</p>
+
+<script src="https://gist.github.com/mnaegeler/19539fa78aa38264728b7f7eaa771d71.js"></script>
+
+<p>Bom, até aqui eu me surpreendi com a facilidade de adicionar esses Widgets na tela e vê-los funcionar sem crise alguma.</p>
+
+<p>Se você vem do Ionic, como eu, verá algumas diferenças de comportamento da <code>ion-tabs</code>, que aqui é chamada de <code>BottomNavigationBar</code> e não é tomada como navegação principal (não altera o rota) como você verá mais para a frente.</p>
+
+<p>Perceba que os ícones também são widgets, assim como os textos.</p>
+
+                <br>
+		<p class="back-to-posts"><a href="https://mnaegeler.space/blog/">Back to posts</a></p>
+            </div>
+            <br>
+            <div class="disqus">
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-38303324-6', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+
